@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>LoginForm</title>
+</head>
+
+<body>
+    <div class="login_form">
+        <form action="#">
+
+            <!-- Block 0 -->
+            <h3>Log in with</h3>
+
+            <!-- Block 1 -->
+            <div class="login_option">
+                <!--  Google -->
+                <div class="option">
+                    <a href="#">
+                        <img src="./logos/google.png" alt="Google.com">
+                        <span>Google</span>
+                    </a>
+                </div>
+
+                <!-- Apple -->
+                <div class="option">
+                    <a href="#">
+                        <img src="./logos/apple.png" alt="Apple.com">
+                        <span>Apple</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Block 2 -->
+            <div class="separator">
+                <span>or</span>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="input_box">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email address" required>
+            </div>
+
+            <!-- Block 4 -->
+            <div class="input_box">
+                <div class="password_title">
+                    <label for="password">Password</label>
+                    <a href="#">Forgot password ?</a>
+                </div>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Block 5 -->
+            <button type="submit">Log In</button>
+
+            <!-- Block 6 -->
+            <p class="sign_up">Don't have an account ? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
