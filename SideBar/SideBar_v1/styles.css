@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(#F1F3FF, #CBD4FF);
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #151A2D;
+}
+
+/* Block 1 */
+.sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+
+.sidebar .sidebar-header .header-logo img {
+    display: block;
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    background: whitesmoke;
+    border-radius: 50%;
+}
+
+.sidebar .sidebar-header .sidebar-toggle {
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sidebar .sidebar-header .sidebar-toggle:hover {
+    background: #d9e1fd
+}
+
+/* Block 2 */
+.sidebar .sidebar-nav .nav-list{
+    display: flex;
+    gap: 4px;
+    padding: 0 15px;
+    flex-direction: column;
+}
+
+.sidebar .sidebar-nav .nav-list li{
+    list-style: none;
+}
+
+.sidebar .sidebar-nav .primary-nav {
+    padding-bottom: 20px;
+    height: calc(100vh - 220px);
+}
+
+.sidebar .sidebar-nav .nav-link {
+    color: #fff;
+    display: flex;
+    gap: 12px;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 11px 15px;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #151A2D;
+}
+
+.sidebar .sidebar-nav .nav-link .fa-chevron-down{
+    color: greenyellow;
+    margin-left: auto;
+}
+
+/* chỗ dropdown này chưa học đến JS nên tạm thời để đấy bổ sung sau */
+.sidebar .sidebar-nav .dropdown-menu{
+    overflow: hidden;
+    max-height: 0;
+    margin-left: 10px;
+}
+
+.sidebar .sidebar-nav .nav-list .nav-item .nav-link:hover{
+    background: #CBD4FF;
+    color: #151A2D;
+}
